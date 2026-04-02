@@ -4,9 +4,9 @@ const contraseña = prompt("Ingrese su contraseña");
 
 if (nombre ===""){
     console.log("Nombre invalido");
-}else if  (edad <= 18){ 
+}else if  (edad <  18){ 
     console.log("Acceso denegado");
-}else if  (contraseña.length <= 6 ){
+}else if  (contraseña.length < 6 ){
     console.log("Contraseña inválida");
 }else {
     console.log(`Bienvenido\nNombre = ${nombre}\nEdad = ${edad}\nContraseña = ${contraseña}`);
