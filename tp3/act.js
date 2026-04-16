@@ -53,13 +53,14 @@ const users = [{"id":1,"first_name":"Laverna","last_name":"Richardes","email":"l
 const id = parseInt(prompt("Ingrése el ID que desea buscar: "));
 
 const usuario_encontrado = users.find((user)=>{
-    if (user.id === id){
-        console.log(user);
-        return user;
-    }else{
-        console.log("usuario no encontrado");
-    }
+    return user.id === id;
 })
+
+if(usuario_encontrado){
+    console.log(usuario_encontrado)
+}else{
+    console.log("no existe ese id de usuario")
+}
 
 
 const contador_generos = users.reduce((acc,user)=>{
